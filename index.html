@@ -74,14 +74,16 @@
   </header>
   <!-- landing page end -->
   <!-- services start -->
-  <section class="services">
-    <!-- title -->
-    <h2 class="services__title sections--title">services</h2>
-    <!-- description -->
-    <p class="services__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-      sem. Mauris
-      <br>blandit aliquet elit, eget tincidunt.
-    </p>
+  <section class="wrapper services">
+    <div class="section__header">
+      <!-- title -->
+      <h2 class="services__title sections--title">services</h2>
+      <!-- description -->
+      <p class="services__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+        sem. Mauris
+        <br>blandit aliquet elit, eget tincidunt.
+      </p>
+    </div>
     <!-- services list -->
     <div class="services__container">
       <article class="ser--item">
@@ -121,48 +123,53 @@
   <!-- services end -->
   <!-- design start -->
   <section class="design">
-    <!-- phone preview -->
-    <div class="design__phone--image">
-      <img src="./media/mobile.png" alt="mobile design preview">
+    <div class="wrapper design--container">
+      <!-- phone preview -->
+      <div class="design__phone--image">
+        <img src="./media/mobile.png" alt="mobile design preview">
+      </div>
+      <!-- design -->
+      <article class="design--content">
+        <!-- title -->
+        <h3 class="design__title">our design comes with...</h3>
+        <!-- features -->
+        <ul class="design__features">
+          <li class="feature">
+            <i class="feature__logo fas fa-desktop fa-1x"></i>
+            <p class="feature__description">responsive design</p>
+          </li>
+          <li class="feature">
+            <i class="feature__logo fas fa-desktop fa-1x"></i>
+            <p class="feature__description">modern and clean design</p>
+          </li>
+          <li class="feature">
+            <i class="feature__logo fas fa-desktop fa-1x"></i>
+            <p class="feature__description">clean code</p>
+          </li>
+          <li class="feature">
+            <i class="feature__logo fas fa-desktop fa-1x"></i>
+            <p class="feature__description">browser friendly</p>
+          </li>
+        </ul>
+      </article>
     </div>
-    <!-- design -->
-    <article class="design">
-      <!-- title -->
-      <h3 class="design__title">our design comes with</h3>
-      <!-- features -->
-      <ul class="design__features">
-        <li class="feature">
-          <i class="feature__logo fas fa-desktop fa-1x"></i>
-          <p class="feature__description">responsive design</p>
-        </li>
-        <li class="feature">
-          <i class="feature__logo fas fa-desktop fa-1x"></i>
-          <p class="feature__description">modern and clean design</p>
-        </li>
-        <li class="feature">
-          <i class="feature__logo fas fa-desktop fa-1x"></i>
-          <p class="feature__description">clean code</p>
-        </li>
-        <li class="feature">
-          <i class="feature__logo fas fa-desktop fa-1x"></i>
-          <p class="feature__description">browser friendly</p>
-        </li>
-      </ul>
-    </article>
   </section>
   <!-- design end -->
   <!-- portfolio start -->
   <section class="protfolio">
-    <!-- title -->
-    <h2 class="portfolio__title sections--title">portfolio</h2>
-    <!-- description -->
-    <p class="portfolio__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-      sem. Mauris
-      <br>blandit aliquet elit, eget tincidunt.
-    </p>
+    <div class="section__header">
+      <!-- title -->
+      <h2 class="portfolio__title sections--title">portfolio</h2>
+      <!-- description -->
+      <p class="portfolio__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor
+        at
+        sem. Mauris
+        <br>blandit aliquet elit, eget tincidunt.
+      </p>
+    </div>
     <!-- gallery navigation -->
     <ul class="gallery__navigation">
-      <li class="gallery__link"><a href="#">all</a></li>
+      <li class="gallery__link link--active"><a href="#">all</a></li>
       <li class="gallery__link"><a href="#">app</a></li>
       <li class="gallery__link"><a href="#">photo</a></li>
       <li class="gallery__link"><a href="#">web</a></li>
@@ -208,21 +215,28 @@
   <!-- portfolio end -->
   <!-- background video start -->
   <section class="background__video">
+    <video src="./media/awesome-video.mp4" autoplay muted loop>
+    </video>
     <div class="video__overlay--blue">
-      <h3 class="video__title">super awesome video here</h3>
-      <p class="video__description">its all you need</p>
-      <button class="vedio__cta"><a href="#">see more</a></button>
+      <div class="overlay__container">
+        <h3 class="video__title">super awesome video here</h3>
+        <p class="video__description">its all you need</p>
+        <button class="video__cta"><a href="#">see more</a></button>
+      </div>
     </div>
   </section>
   <!-- background video end -->
   <!-- about us start -->
   <section class="aboutus">
-    <h2 class="aboutus__title sections--title">about us</h2>
-    <!-- description -->
-    <p class="aboutus__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-      sem. Mauris
-      <br>blandit aliquet elit, eget tincidunt.
-    </p>
+    <div class="section__header">
+      <!-- title -->
+      <h2 class="aboutus__title sections--title">about us</h2>
+      <!-- description -->
+      <p class="aboutus__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+        sem. Mauris
+        <br>blandit aliquet elit, eget tincidunt.
+      </p>
+    </div>
     <div class="tablet__image">
       <img src="./media/about.png" alt="tablet and laptop preview">
     </div>
@@ -320,13 +334,15 @@
   <!-- quote end -->
   <!-- plans start -->
   <section class="plan">
-    <!-- title -->
-    <h2 class="plans__title sections--title">pricing</h2>
-    <!-- description -->
-    <p class="plans__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-      sem. Mauris
-      <br>blandit aliquet elit, eget tincidunt.
-    </p>
+    <div class="section__header">
+      <!-- title -->
+      <h2 class="plans__title sections--title">pricing</h2>
+      <!-- description -->
+      <p class="plans__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+        sem. Mauris
+        <br>blandit aliquet elit, eget tincidunt.
+      </p>
+    </div>
     <!-- plans -->
     <article class="pricing">
       <table class="plans">
@@ -406,13 +422,16 @@
   <!-- news end -->
   <!-- contact us start -->
   <section class="contactus">
-    <!-- title -->
-    <h2 class="contactus__title sections--title">contact us</h2>
-    <!-- description -->
-    <p class="contactus__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-      sem. Mauris
-      <br>blandit aliquet elit, eget tincidunt.
-    </p>
+    <div class="section__header">
+      <!-- title -->
+      <h2 class="contactus__title sections--title">contact us</h2>
+      <!-- description -->
+      <p class="contactus__description sections--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor
+        at
+        sem. Mauris
+        <br>blandit aliquet elit, eget tincidunt.
+      </p>
+    </div>
     <div class="contact__container">
       <form action="">
         <input type="text" name="name" placeholder="your name">
