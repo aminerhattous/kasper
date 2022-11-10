@@ -9,7 +9,7 @@
   <!-- reset all elements -->
   <link rel="stylesheet" href="./css/normalize.css">
   <!-- fontawesome library -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
   <!-- main styling -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,50 +17,60 @@
 <body>
   <!-- landing page start -->
   <header class="landing__page">
-    <!-- navigation bar start -->
-    <nav class="landing__navigation--bar">
-      <!-- logo -->
-      <div class="navigation--logo">
-        <img class="nav__logo" src="./media/logo.png" alt="company logo">
-      </div>
-      <!-- links -->
-      <ul class="navigation--links">
-        <li class="nav--link"><a href="#">home</a></li>
-        <li class="nav--link"><a href="#">services</a> </li>
-        <li class="nav--link"><a href="#">portfolio</a></li>
-        <li class="nav--link"><a href="#">about</a></li>
-        <li class="nav--link"><a href="#">pricing</a></li>
-        <li class="nav--link"><a href="#">contact</a></li>
-      </ul>
-      <!-- search -->
-      <div class="landing__search">
-        <i class="search fas fa-search"></i>
-      </div>
-    </nav>
-    <!-- navigation bar end -->
-    <!-- hero start -->
-    <section class="landing__hero">
-      <!-- title -->
-      <h1 class="hero--title">hello world!
-        <br>we are kasper we make art.
-      </h1>
-      <!-- description -->
-      <p class="hero--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
-        <br> blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
-        <br> Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-        <br> tincidunt.
-      </p>
-    </section>
-    <!-- hero end -->
-    <!-- slider bullets start -->
-    <nav class="landing__slider--navigation">
-      <ul class="slider--bullets">
-        <li class="bullet"></li>
-        <li class="bullet bullet--active"></li>
-        <li class="bullet"></li>
-      </ul>
-    </nav>
-    <!-- slider bullets end -->
+    <div class="landing--content">
+      <!-- navigation bar start -->
+      <nav class="wrapper landing__navigation--bar">
+        <!-- logo -->
+        <div class="navigation--logo">
+          <img class="nav__logo" src="./media/logo.png" alt="company logo">
+        </div>
+        <!-- links -->
+        <ul class="navigation--links">
+          <li class="nav--link nav--link--active "><a href="#">home</a></li>
+          <li class="nav--link"><a href="#">services</a> </li>
+          <li class="nav--link"><a href="#">portfolio</a></li>
+          <li class="nav--link"><a href="#">about</a></li>
+          <li class="nav--link"><a href="#">pricing</a></li>
+          <li class="nav--link"><a href="#">contact</a></li>
+        </ul>
+        <!-- search -->
+        <div class="landing__search">
+          <i class="search fas fa-search"></i>
+        </div>
+      </nav>
+      <!-- navigation bar end -->
+      <!-- hero start -->
+      <section class="landing__hero">
+        <div class="wrapper">
+          <div class="hero--content">
+            <!-- title -->
+            <h1 class="hero--title">hello world!
+              <br>we are kasper we make art.
+            </h1>
+            <!-- description -->
+            <p class="hero--description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+              <br> blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+              <br> Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+              <br> tincidunt.
+            </p>
+          </div>
+        </div>
+        <span class="hero__arrow">
+          <i class="fas fa-angle-left change-background fa-2x"></i>
+          <i class="fas fa-angle-right change-background fa-2x"></i>
+        </span>
+      </section>
+      <!-- hero end -->
+      <!-- slider bullets start -->
+      <nav class="landing__slider--navigation">
+        <ul class="slider--bullets">
+          <li class="bullet"></li>
+          <li class="bullet bullet--active"></li>
+          <li class="bullet"></li>
+        </ul>
+      </nav>
+      <!-- slider bullets end -->
+    </div>
   </header>
   <!-- landing page end -->
   <!-- services start -->
