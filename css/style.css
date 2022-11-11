@@ -791,3 +791,36 @@ tfoot button a {
 .news__description {
   color: #fff;
 }
+
+/* contact us */
+.contact__container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+::placeholder {
+  text-transform: capitalize;
+}
+.contact__container form {
+  display: grid;
+  gap: 20px;
+}
+.contact__container form input:not([type="submit"]),
+.contact__container form textarea {
+  display: block;
+  padding: 20px;
+  outline: none;
+}
+.submit__contact {
+  padding: 20px;
+  justify-self: end;
+  background: var(--clr-primary-400);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.phone__number p {
+  margin-top: 0;
+}
