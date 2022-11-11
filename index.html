@@ -244,7 +244,7 @@
   <!-- about us end -->
   <!-- progress start -->
   <section class="progress">
-    <div class="progress__container">
+    <div class=" wrapper progress__container">
       <!-- progress one -->
       <div class="progress__item">
         <i class="fas fa-mug-hot"></i>
@@ -273,13 +273,13 @@
   </section>
   <!-- progress end -->
   <!-- skills and testimonials start -->
-  <section class="skills">
+  <section class="wrapper skills">
     <!-- testimonials -->
-    <article class="testimonilas">
+    <article class="testimonials">
       <!-- title -->
-      <h4 class="testi__title">testimonials</h4>
+      <h4 class="testi__title article--title">testimonials</h4>
       <!-- description -->
-      <p class="testi__description">
+      <p class="testi__description article--description">
         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
         <br>Mauris blandit aliquet elit, eget tincidunt.
       </p>
@@ -287,7 +287,9 @@
       <div class="review__container">
         <div class="review">
           <!-- first client -->
-          <div class="client__image"><img src="./media/skills-01.jpg" alt="client profile"></div>
+          <div class="client__image">
+            <img src="./media/skills-01.jpg" alt="client profile">
+          </div>
           <p class="client__words">Curabitur arcu erat, accumsan id imperdiet et,
             <br>porttitor at sem. Mauris blandit aliquet elit, eget
             <br>tincidunt.
@@ -304,32 +306,51 @@
           </p>
         </div>
       </div>
+      <ul class="testi--bullet slider--bullets">
+        <li class="bullet"></li>
+        <li class="bullet bullet--active"></li>
+        <li class="bullet"></li>
+      </ul>
     </article>
     <!-- skills -->
-    <article class="skills">
+    <article class="skill">
       <!-- title -->
-      <h4 class="skills__title">skills</h4>
+      <h4 class="skill__title article--title">skills</h4>
       <!-- description -->
-      <p class="skills__description">
+      <p class="skill__description article--description">
         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
         <br>Mauris blandit aliquet elit, eget tincidunt.
       </p>
       <!-- skills progress bar -->
-      <section class="progress__container">
+      <section class="progress__bars">
         <h5 class="progress__title">adobe</h5>
-        <div class="pro__bar"><span class="bar--tracker"></span></div>
+        <div class="pro__bar"><span class="bar--tracker tr--one"></span></div>
+      </section>
+      <section class="progress__bars">
+        <h5 class="progress__title">html &amp; css</h5>
+        <div class="pro__bar"><span class="bar--tracker tr--two"></span></div>
+      </section>
+      <section class="progress__bars">
+        <h5 class="progress__title">javascript</h5>
+        <div class="pro__bar"><span class="bar--tracker tr--three"></span></div>
+      </section>
+      <section class="progress__bars">
+        <h5 class="progress__title">php</h5>
+        <div class="pro__bar"><span class="bar--tracker tr--four"></span></div>
       </section>
     </article>
   </section>
   <!-- skills and testimonials end -->
   <!-- quote start -->
   <section class="quote">
-    <!-- quote -->
-    <q class="quote">accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-      <br>tincidunt.
-    </q>
-    <!-- author -->
-    <span class="quote__author">jhon doe</span>
+    <div class="quote__container">
+      <!-- quote -->
+      <q class="quote__l">accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+        <br>tincidunt.
+      </q>
+      <!-- author -->
+      <p class="quote__author">jhon doe</p>
+    </div>
   </section>
   <!-- quote end -->
   <!-- plans start -->
@@ -344,24 +365,24 @@
       </p>
     </div>
     <!-- plans -->
-    <article class="pricing">
+    <article class="wrapper pricing">
       <table class="plans">
         <thead>
           <tr>
             <td>
-              <h6 class="plan__name">basic</h6>
+              <p class="plan__name">basic</p>
               <p class="price">19</p>
             </td>
             <td>
-              <h6 class="plan__name">premium</h6>
+              <p class="plan__name">premium</p>
               <p class="price">29</p>
             </td>
             <td>
-              <h6 class="plan__name">pro</h6>
+              <p class="plan__name">pro</p>
               <p class="price">39</p>
             </td>
             <td>
-              <h6 class="plan__name">platinum</h6>
+              <p class="plan__name">platinum</p>
               <p class="price">49</p>
             </td>
           </tr>
@@ -397,27 +418,39 @@
             <td>
               <button><a class="buynow" href="#">buy now</a></button>
             </td>
+            <td>
+              <button><a class="buynow" href="#">buy now</a></button>
+            </td>
+            <td>
+              <button><a class="buynow" href="#">buy now</a></button>
+            </td>
+            <td>
+              <button><a class="buynow" href="#">buy now</a></button>
+            </td>
           </tr>
         </tfoot>
       </table>
     </article>
     <!-- special order -->
     <div class="offers__contact">
-      <p>contact us if you have special request</p>
+      <p>Contact us if you have special request</p>
       <a class="offresè=--cta" href="#">contact us</a>
     </div>
   </section>
   <!-- plans end -->
   <!-- news -->
   <article class="news">
-    <form>
-      <input type="email" name="email" placeholder="Your Email">
-      <input type="submit" value="SUBSCRIBE">
-    </form>
-    <p class="news__description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit
-      aliquet
-      <br> elit, eget tincidunt.
-    </p>
+    <div class="wrapper news__container">
+      <form>
+        <i class="mail__logo far fa-envelope fa-lg"></i>
+        <input type="email" name="email" placeholder="Your Email">
+        <input type="submit" value="SUBSCRIBE">
+      </form>
+      <p class="news__description">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit
+        aliquet
+        <br> elit, eget tincidunt.
+      </p>
+    </div>
   </article>
   <!-- news end -->
   <!-- contact us start -->
